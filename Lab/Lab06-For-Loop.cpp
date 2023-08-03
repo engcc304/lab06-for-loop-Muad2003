@@ -19,7 +19,30 @@
 
 int main() {
 
-    //--| YOUR CODE HERE
+    int n ;
+    printf( "Enter value: \n") ;
+    scanf( "%d", &n ) ;
 
+    // ได้ค่าเป็นเลขคี่
+    if(n % 2 != 0) {
+        int i = 1 ;
+        printf( "Series: %d ", i ) ;
+
+        for ( i ; i < n ; i + 2 )
+            {
+            i = i + 2 ;
+            printf( "%d ", i ) ;
+        }
+    } 
+
+    // ได้ค่าเป็นเลขคู่
+    else if ( n % 2 == 0 ){
+        int i ;
+        printf( "Series: " ) ;
+        for ( i = n ; i >= 0 ; i -= 2 )
+        {
+            printf( "%d ", i ) ;
+        }
+    }    
     return 0 ;
 }//end main function
